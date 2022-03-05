@@ -1,0 +1,373 @@
+:root{
+    --azul:#03264C;
+    --azuliconos:#1259c3;
+    --gray:#666;
+    --light-gray: #ebebeb;
+}
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+header{
+    background-color: #EAC926;
+    padding: 10px;
+}
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.top-header h2{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+header div.logo{
+    padding: 10px;
+    width: 50%;
+}
+header div.logo img{
+    width:200px;
+}
+
+header .main-navbar{
+    display: none;
+    
+}
+
+.main-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
+
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    display: block;
+    background-color: var(--azuliconos);
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    max-width: 40px;
+}
+
+header .form{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+header .form form{
+    display: flex;
+    position: relative;
+    
+}
+header input[type=search]{
+    width: 300px;
+    height: 40px;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    border-radius: 5px;
+}
+
+header .form .icon{
+    position: absolute;
+    right: 8px;
+    height: 100%;
+    background-color: #ffffff;
+    border: none;
+    border-left: solid 1px var(--light-gray);
+    color: var(--gray);
+    cursor: pointer;
+   
+}
+
+/***************/
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+main section article .description{
+    display: none;
+    margin-top: 20px;
+}
+
+main article:hover .description{
+    display: block;
+}
+main article:hover {
+    box-shadow: 0px 0px 11px #00000096
+}
+main article i{
+    transition: all 2s;
+}
+main article:hover i{
+     transform: rotate(-90deg);
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+main section div.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+footer{
+    padding: 20px;
+    background: white;
+    margin-top: 50px;
+
+}
+footer div{
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+
+footer div .title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer .box-footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+footer .box-footer i:hover{
+    color: #39b54a;
+}
+
+/*********/
+.register-form{
+    padding: 20px 15px;
+    margin: auto;
+}
+.register-form .group-form:last-child{
+    display: flex;
+}
+.group-form{
+    margin: 15px;
+}
+.group-form .title{
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.group-form .control-form{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 10pt;
+    color: #63717f;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.group-form .btn{
+    display: flex;
+    margin: auto;
+    border: none;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    background: #39b54a;
+    padding: 5px 13px;
+    color: white;
+    transition: background-color 500ms;
+}
+.group-form .btn:hover{
+    background-color: #0022AA;
+}
+
+.group-form .option{
+    padding: 0px 10px 0px 5px;
+    font-size: 14px;
+    color: #525050;
+}
+.error{
+    color: red;
+}
+    
+@media (min-width: 768px){
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-header h2{
+        max-width: 350px;
+        text-align: right;
+    }
+    .top-header .logo, .top-header .form{
+        width: auto;
+    }
+    div.burger-menu i {
+        display: none;
+    }
+    .main-navbar{
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar ul li{
+        margin: 0 5px;
+    }
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+ 
+    main section div.products article{
+        width: 45%;
+    }
+   
+}
+@media (min-width: 1200px){
+    .main-navbar, .top-header{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-navbar ul li{
+        margin: 0 10px;
+    }
+    .top-header{
+        margin-bottom: 20px;
+    }
+    .top-header .logo, .top-header .form{
+        width: auto;
+    }
+    .top-header h2{
+        max-width: none;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+    main section div.products article{
+        width: 23%;
+    }
+    .register-form {
+        width: 600px;
+        margin: auto;
+    }
+    .box-footer{
+        display: flex;
+    }
+}
+
