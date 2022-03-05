@@ -1,1 +1,1 @@
-# mercadoliebreDH
+# Este es un proyecto de integracion del curso full stack de DH
